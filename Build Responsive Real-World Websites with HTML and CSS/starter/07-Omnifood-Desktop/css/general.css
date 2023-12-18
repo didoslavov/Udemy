@@ -37,6 +37,7 @@
           * #94d82d
           * #ffd43b   
         ! Greys:
+          * #767676;
           * #888
           * #6f6f6f 
           * #555
@@ -87,6 +88,10 @@
 
 .grid--4-cols {
     grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {
@@ -200,6 +205,10 @@
 .link:active {
     color: #cf711f;
     border-bottom: 1px solid transparent;
+}
+
+.logo {
+    height: 2.2rem;
 }
 
 .list {
