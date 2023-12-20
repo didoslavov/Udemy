@@ -1,13 +1,35 @@
 const mobileMenu = document.querySelector('.btn-mobile-nav');
-mobileMenu.addEventListener('click', toggleNav);
+mobileMenu.addEventListener('click', toggleNavMenu);
 const headerEl = document.querySelector('.header');
 
-function toggleNav() {
+function toggleNavMenu() {
     headerEl.classList.toggle('nav-open');
 }
 
 const yearEl = document.querySelector('.year');
 yearEl.textContent = new Date().getFullYear();
+
+const allLinks = document.querySelectorAll('a:link');
+
+allLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        if (link.classList.contains('main-nav-link')) {
+            toggleNavMenu();
+        }
+    });
+});
+
+const sectionHeroEl = document.querySelector('.section-hero');
+
+const observer = new IntersectionObserver(
+    (entries) => (!entries[0].isIntersecting ? document.body.classList.add('sticky') : document.body.classList.remove('sticky')),
+    {
+        root: null,
+        threshold: 0,
+        rootMargin: '-80px',
+    }
+);
+observer.observe(sectionHeroEl);
 
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
