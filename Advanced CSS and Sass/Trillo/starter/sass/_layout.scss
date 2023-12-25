@@ -2,7 +2,7 @@
     max-width: 120rem;
     margin: 8rem auto;
     background-color: var(--color-grey-light-2);
-    box-shadow: 0 2rem 6rem rgba(var(--shadow-dark));
+    box-shadow: var(--shadow-dark);
 
     min-height: 50rem;
 }
@@ -10,7 +10,7 @@
 .header {
     height: 7rem;
     background-color: #fff;
-    border-bottom: var($color-grey-liht-2);
+    border-bottom: var(--color-grey-light-2);
 }
 
 .content {
@@ -18,7 +18,7 @@
 }
 
 .sidebar {
-    background-color: --color-colro-grey-1;
+    background-color: var(--color-grey-dark-1);
     flex: 0 0 18%;
 }
 
