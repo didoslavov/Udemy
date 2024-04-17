@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://github.com/didoslavov/udemy/blob/main/recources/htmlcss.jpeg?raw=true" />
+</p>
+
 # Course Material and FAQ for my Advanced CSS Course
 
 This repo contains starter files and the finished project files for all the projects contained in the course.
