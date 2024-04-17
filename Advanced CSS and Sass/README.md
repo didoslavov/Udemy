@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/didoslavov/udemy/blob/main/recources/htmlcss.jpeg?raw=true" />
+<img src="https://github.com/didoslavov/Udemy/blob/main/recourses/htmlsass.jpg?raw=true" />
 </p>
 
 # Course Material and FAQ for my Advanced CSS Course
